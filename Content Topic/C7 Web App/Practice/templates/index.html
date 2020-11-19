@@ -1,0 +1,48 @@
+{% extends 'layout.html' %}
+
+<!-- title -->
+{% block title %}
+	Practice
+{% endblock %}
+
+
+<!-- heading -->
+{% block head %}
+	Welcome to Fazli Flask Practice for Block Exam
+{% endblock %}
+
+
+
+<!-- body -->
+{% block title %}
+<form action='{{url_for("index")}}' method='POST'>
+	<!-- text -->
+	<p>
+		Name: <input type='text' name='name'>
+	</p>
+	
+	<!-- drop down list -->
+	<p>
+		Class:
+		<select name='class'>
+			<option value='19S15'>19S15</option>
+			<option value='19S15'>19S16</option>
+			<option value='19S15'>20S15</option>
+			<option value='19S15'>20S16</option>
+	</p>
+	
+	<!-- radio button -->
+	<p>
+		Gender:
+		M<input type='radio' name='M'><br>
+		F<input type='radio' name='F'>
+	</p>
+	
+	
+	<!-- submit -->
+	<input type='submit'>
+
+</form>
+
+
+{% endblock %}

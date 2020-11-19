@@ -1,0 +1,35 @@
+body{
+	font-family: Arial;
+}
+
+header{
+	background-color: #2D2726;
+	color: white;
+	font-family: Arial;
+	height: 50px;
+}
+
+strong{
+	font-size: 36px;
+	float: left;
+	padding: 5px 20px ;
+}
+
+header::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+ul.navbar{
+	display: inline;
+	list-style: none;
+}
+
+ul a{
+	color: white;
+	text-decoration: none;
+	float: right;
+	margin-left: 20px;
+	margin-right: 50px;
+}

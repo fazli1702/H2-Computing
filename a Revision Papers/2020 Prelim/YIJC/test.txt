@@ -1,0 +1,6 @@
+postalcode:123456
+date:20200929
+time in:10:00
+time out: 13:00
+nric:T1234567A
+phone:12345678

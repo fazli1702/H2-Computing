@@ -1,0 +1,39 @@
+{% extends 'layout.html' %}
+
+{% block title%}Register{% endblock %}
+
+{% block body %}
+<h1>Registration</h1>
+
+<p>(for new users)</p>
+
+<p style="color: red;">{{warning}}</p>
+
+<fieldset>
+    <form action="{{url_for('validate_register')}}" method="POST">
+
+        Name: <input type="text" name="name"><br><br>
+
+        NRIC: <input type="text" name="nric"><br><br>
+
+        Email: <input type="email" name="email"><br><br>
+
+        Telephone: <input type="text" name="tel"><br><br>
+
+        Subject: 
+        <select name="classID">
+        {% for id in classID %}
+            <option value="{{id}}">{{id}}</option>
+        {% endfor %}
+        </select>
+
+        <br><br>
+
+        Password: <input type="password" name="password"><br><br>
+    
+        <input type="submit" name="login" value="login">
+    </form>
+</fieldset>
+
+
+{% endblock %}

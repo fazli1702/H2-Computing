@@ -1,0 +1,23 @@
+{% extends 'layout.html' %}
+
+{% block title%}
+	Fazli Tuition Centre
+{% endblock %}
+
+
+{% block head %}
+	<strong>Welcome to Fazli Tuition Centre</strong>
+{% endblock %}
+
+
+{% block body %}
+<ul>
+	<li><a href="{{url_for('login')}}">Login</li>
+	<li><a href="{{url_for('register')}}">Register</a></li>
+</ul>
+
+
+<fieldset>
+	<h2>Subjects Offered</h2>
+</fieldset>
+{% endblock %}

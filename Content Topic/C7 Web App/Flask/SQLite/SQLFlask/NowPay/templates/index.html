@@ -1,0 +1,29 @@
+{% extends "layout.html" %} 
+
+{% block title %}
+	Computing Bookshop 
+{% endblock %} 
+
+
+{% block heading %}
+	Welcome to the computing bookshop
+{% endblock %}
+
+
+
+{% block body %}
+	<fieldset>
+		<legend><h2>Books</h2></legend>
+		
+		<form action="{{url_for('validate')}}" method="POST">
+		{% for book in books %}
+			<input type="checkbox" name="bookInfo" value={{book[0]}}>
+			{{book[1]}}  <strong>${{book[2]}}</strong>
+			<br>
+			<br>
+		{% endfor %}
+		
+		<input type="submit" name="submit" value="Submit order">
+		
+	</fieldset>
+{% endblock %}

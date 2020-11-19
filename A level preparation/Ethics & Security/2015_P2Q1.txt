@@ -1,0 +1,59 @@
+A2015 P2Q1 (Ethics & Security)
+
+INFO COLLECTED________________
+- grades, books, attendance (normal)
+- meetings with tutors, email exchange *
+ --> grey area / ethical issues
+ --> invasion of privacy
+ --> Is it even neccasry to record such issues ?
+ --> Appropriate ?
+
+VIEW OF INFO___________________
+- *All* data of students 
+ -- available to all academic staff for viewing and editing
+  --> invasion of privcy
+  --> loss of confidentiality (privacy)
+  --> authorisation / permission 
+  --> lack of restriction
+  --> misuse of data
+
+ -- Summary info(don't identify student) available for some management staff (normal)
+ -- student do not have access to information
+
+ * vocab
+   - there may be a potential ....
+   - might ....
+   - mishandled
+
+b) State two issues from the ethics commitee
+- One issue is the invasion of privacy such as collecting email exchanges
+- Another issue is the potential use of data. This is due to the fact that data can be
+accessed by any academic staff which may use the data for thier own use.
+
+
+INTRANET - organisation / company
+- links 
+- organisation have many different office
+- all staff connect to same INTRANET
+
+g/h) 2 physical/software security measure
+
+physical:
+- phyiscal server
+--> network segregation - students & teachers use different switches
+
+
+software:
+* authentication enhancing
+--> hardware seperation (subnetting)
+(students & teachers given different IP address, filter by IP address)
+
+
+
+i)  legally protect system
+ - intellectual property
+  --> copyright - applying for copyright license for IP
+  --> engage lawyer to ensure license is viable and ensure others can be charged
+        for using it
+
+

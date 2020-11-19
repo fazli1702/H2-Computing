@@ -1,0 +1,29 @@
+Question 4: A2016 P2Q1
+
+c)
+ETHICAL (moral, legal)
+- privacy
+ --> whose privacy?
+ --> what privacy? 
+        - type of data (personal information)
+ --> invasion of privacy / loss of confidentially
+       - *if management of data not regulated
+
+- misuse of data
+ --> staff may use the data for their own good instead of using it for work
+
+
+
+SOCIAL
+- the user inerface must be easy and intuitive to use as
+  some doctors or nurses may not be very tech savy and 
+  may not know how to use a very advanced system
+
+
+g) i)
+security of access 
+- have a more stringent authentication
+ --> 2FA (password & token/OTP/biometric)
+ --> strong password
+       - length > 8
+       - special characters

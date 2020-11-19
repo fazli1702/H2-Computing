@@ -1,0 +1,17 @@
+{% extends 'layout.html' %}
+
+{% block title%} Login Page {% endblock %}
+
+  
+{% block body %}
+
+<h1>Login</h1>
+
+<fieldset>
+<form>
+    NRIC: <input type="text" name="nric"><br><br>
+    Password: <input type="password" name="password"><br><br>
+    <input type="submit" name="login" value="login">
+</form>
+</fieldset>
+{% endblock %}

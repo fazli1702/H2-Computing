@@ -1,0 +1,22 @@
+{% block body %}
+
+<h1>Register for new class</h1>
+
+<p>{{registered}}</p>
+
+<form action="POST" method="{{url_for('validate_register_new')}}"></form>
+NRIC: <input type="text" name="nric"><br><br>
+
+Subject: 
+    <select name="classID">
+    {% for id in classID %}
+        <option value="{{id[0]}}">{{id[0]}}</option>
+    {% endfor %}
+    </select>
+
+<p><input type="submit" name="submit" value="submit"></p>
+</form>
+
+
+
+{% endblock %}

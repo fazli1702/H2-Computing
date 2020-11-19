@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+</head>
+
+<style>
+table, td, th {
+	border-collapse: collapse;
+	border: 1px solid black;
+}
+</style>
+
+<body>
+	<fieldset>
+		<h2>Top Performers for {{month}} {{year}}</h2>
+		
+		<table>
+			<tr>
+				<th>Office Id</th>
+				<th>Salesperson</th>
+				<th>Total Amount $$</th>
+			</tr>
+			
+			{% for officeID, Salesperson, amount in data %}
+			<tr>
+				<td>{{officeID}}</td>
+				<td>{{Salesperson}}</td>
+				<td>{{amount}}</td>
+			</tr>
+			{% endfor %}
+			
+		</table>
+		
+	</fieldset>
+</body>
+
+</html>

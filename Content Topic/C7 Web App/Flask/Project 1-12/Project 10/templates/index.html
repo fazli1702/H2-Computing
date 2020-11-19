@@ -1,0 +1,9 @@
+{% extends "layout.html" %} 
+
+{% block heading %} 
+	This is the Index Page 
+{% endblock %} 
+
+{% block body %} 
+	<a href="{{ url_for('hello') }}"> Click here to go to hello page</a> 
+{% endblock %}

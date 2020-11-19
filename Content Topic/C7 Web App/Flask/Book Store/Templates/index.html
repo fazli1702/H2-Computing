@@ -1,0 +1,97 @@
+{% extends "template.html" %}
+
+{% block heading %}
+	Welcome to the Computing Book Store
+{% endblock %}	
+
+
+
+{% block body %}
+	<!--inputs-->
+	<div id="info">
+	<fieldset>
+
+		<legend><h2>Your information</h2></legend>
+
+		<!--name-->
+		<form action="{{url_for('index')}}" method="POST">
+			<div>
+				<label>Name:</label>
+				<input type="text" name="name">	
+			</div>
+
+		<br>
+
+		<!--email-->
+			<div>
+				<label>Email:</label>
+				<input type="email" name="email">
+			</div>
+
+		<br>
+
+
+
+
+		<!--choice of books-->
+		<h2>Choice of books</h2>
+		<p>(choose only 3)</p>
+
+			<div>
+				{% for i in range(10)%}
+				<input type="checkbox" name="BookOrder" value={{i}}>{{books[i][0]}} 
+				<strong>(${{books[i][1]}})</strong>
+
+				<br>
+				<br>
+				{% endfor %}
+			</div>
+
+			<br>
+
+			<input type="submit" name="submit" value="Submit order">
+
+		</form>
+		
+	</fieldset>
+	</div>
+
+
+
+
+
+	<!--Display information-->
+	<div id="order">
+	<fieldset>
+	
+		<legend><h2>Orders</h2></legend>
+		<ol>
+			{% for order in orders %}
+			<li>
+				{{order[0]}}
+				<br>
+				{{order[1]}}
+				<br>
+				{{order[2]}}
+				<br>
+				<br>
+				{% for ele in order[3] %}
+				<ul>
+					<li>
+						{{ele[0]}}
+						<br>
+						${{ele[1]}}
+					</li>
+				</ul>
+				{% endfor %}
+				<br>
+				<h3>Total: ${{order[4]}}</h3><br>
+			</li>
+			<br>
+			{% endfor %}
+		</ol>	
+		
+	</fieldset>
+	</div>
+
+{% endblock %}

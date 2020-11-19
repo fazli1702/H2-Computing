@@ -1,0 +1,74 @@
+question 1
+- read / write file
+- quick sort
+- binary_searchx
+
+
+
+
+
+task 2.1
+READ QUESTION !!!!!!!!
+- pls read question and read and enter csv file into db
+
+
+
+
+
+task 3.2
+- read question carefully, question did not ask to read file, so just copy paste
+- be careful when using isinstance() because isinstance also return TRUE for superclass
+and its class
+
+i.e. 
+>>> a  = Food()
+>>> b = DatedFood()
+>>>  isinstance(a, Food)
+True
+>>> isinstance(a, DatedFood)
+False
+>>> isinstance(b, DatedFood)
+True
+>>> isinstance(b, Food)
+True
+
+
+
+
+
+
+
+Question 4
+[3] Paste game function code
+ - user(position, direction)   <-- next position of player
+- grid(p, o)    <-- generate a new maze
+- generate random prize position
+
+don't use protocol i.e (while b'\n' not in data)
+- maze is a string with '\n' 
+maze_string = '
+. . . . . . . \n
+. . p . . . . \n
+. . . . . o . \n
+'
+
+
+[2] Initialise and implement a counter
+ - either at server or client (only one)
+
+
+ALWAYS CHECK SERVER QUIT FIRST !!	
+
+[4] End game when player gets prize
+- server send win_msg
+- client display win_msg
+- both server and client end game
+
+[7] user's movement
+- get user input in client
+- client sends movement
+- server receives movement
+- game code to process input
+- server send output screen to client
+- client receives output screen
+- client display output screen

@@ -1,0 +1,27 @@
+{% extends 'layout.html' %}
+
+{% block title%}
+	Fazli Tuition Centre
+{% endblock %}
+
+
+{% block head %}
+	<strong>Welcome to Fazli Tuition Centre</strong>
+{% endblock %}
+
+
+{% block body %}
+
+
+<ul>
+	<li><a href="{{url_for('login')}}">Login</li>
+	<li><a href="{{url_for('register')}}">Register</a></li>
+</ul>
+
+<h2>Subjects Offered</h2>
+
+<p>We offer a huge range of subjects and are also located all around Singapore</p>
+
+<a href="{{url_for('display_class')}}">List of all classes</a>
+
+{% endblock %}

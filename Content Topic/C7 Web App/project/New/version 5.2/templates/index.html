@@ -1,0 +1,30 @@
+{% extends 'layout.html' %}
+
+
+{% block title %}
+    Fazli Tuition Centre
+{% endblock %}
+
+
+
+{% block body %}
+
+<h1>Welcome to Fazli Tuition Centre</h1>
+
+<ul>
+    <li><a href="{{url_for('login')}}">Login</a></li>
+    <li><a href="{{url_for('register')}}">Register</a></li>
+    <li><a href="{{url_for('admin_login')}}">Admin</a></li>
+</ul>
+
+
+<h2>Subjects Offered</h2>
+
+<p>We offer a huge range of subjects</p>
+
+<a href="{{url_for('classes')}}">List of all classes</a>
+
+
+
+
+{% endblock %}

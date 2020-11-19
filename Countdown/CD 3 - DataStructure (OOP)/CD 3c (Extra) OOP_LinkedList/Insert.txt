@@ -1,0 +1,30 @@
+PROCEDURE Insert(name, position):
+    Node[NextFree].Name ← name   //insert data into next available list node
+    Temp ← Node[NextFree].Pointer //Temp stores the index of next free list node
+    IF Start = 0                  //empty LinkedList case
+	THEN
+            Start ← NextFree       //update Start pointer
+            Node[NextFree].Pointer ← 0  //delink List node 
+	    NextFree ← Temp         //update NextFree
+            
+        ELSE	    
+            IF position=1        //adding to front of the linkedlist
+		THEN                         
+                    Node[NextFree].Pointer ← Start  
+                    Start ← NextFree
+                    NextFree ← Temp               
+                ELSE
+	            //traverse the list, starting at Start to 
+	            //the position at which to insert the new item
+                    current ← Start
+                    previous ← 0              
+                    FOR i ← 1 to position-1
+                        previous ← current
+                        current ← Node[current].Pointer
+                    Node[previous].Pointer ← NextFree  
+		    Node[NextFree].Pointer ← current  
+                    NextFree ← Temp
+	    ENDIF
+    ENDIF
+ENDPROCEDURE
+                                                

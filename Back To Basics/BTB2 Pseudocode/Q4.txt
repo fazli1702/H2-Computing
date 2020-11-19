@@ -1,0 +1,28 @@
+1. OPEN FILE
+2. PUZZLE
+- LOOP THROUGH
+- OBTAIN EVERY ROW
+- STORE IN STRING VAR
+- WRITE LINE INTO TXT FILE
+3. CLOSE FILE
+
+
+DECLARE Puzzle ARRAY[1:9, 1:9] OF INTEGER
+
+Puzzle[3, 5] <- 4
+
+
+Text <- ''
+OPENFILE 'SUDOKU.TXT', WRITEFILE
+
+FOR i <- 1 TO 9
+    FOR j <- 1 TO 9
+	IF Puzzle[i][j] = ''
+	    THEN
+	    	Text <- Text + '0'
+	    ELSE
+	    	Text <- Text + Puzzle[i][j]
+
+CLOSEFILE 'SUDOKU.txt'
+
+

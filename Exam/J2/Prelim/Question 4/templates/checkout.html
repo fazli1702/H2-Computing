@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<style>
+div {
+	color:red;
+}
+</style>
+
+<body>
+
+<img src={{url_for('static', filename='OUT.JPG')}}>
+
+<fieldset>
+    <div>{{warning}}</div>
+    <form method='POST' action={{url_for('processCheckOut')}}>
+        Postal Code: <input type='text' name='PostalCode'> <br><br>
+        Date (yyyymmdd): <input type='text' name='Date'><br><br>
+        Check-out Time (hh:mm): <input type='text' name='CheckOutTime'><br><br>
+        NRIC :<input type='text' name='NRIC'><br><br>
+        Handphone No. : <input type='text' name='HandphoneNo'><br><br>
+
+        <input type='submit' value='submit' name='submit'>
+    </form>
+</fieldset>
+
+</body>
+
+
+
+</html>

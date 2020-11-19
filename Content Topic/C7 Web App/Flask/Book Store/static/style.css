@@ -1,0 +1,9 @@
+div #info{
+	float: left;
+	width: 50%;
+}
+
+div #order{
+	float: right;
+	width: 50%;
+}

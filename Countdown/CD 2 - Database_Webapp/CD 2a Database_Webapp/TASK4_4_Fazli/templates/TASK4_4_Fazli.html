@@ -1,0 +1,20 @@
+<style>
+table, th, td {
+	border: 1px solid black;
+    border-collapse: collapse;
+}
+</style>
+
+<table>
+    <tr>
+        <th>Serial Number</th>
+        <th>Type</th>
+    </tr>
+
+    {% for SerialNumber, Type in Data %}
+    <tr>
+        <td>{{SerialNumber}}</td>
+        <td>{{Type}}</td>
+    </tr>
+    {% endfor %}
+</table>

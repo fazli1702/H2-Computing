@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+</head>
+
+<body>
+<fieldset>
+	<form action={{url_for('activities')}} method='POST'>
+		StudentID: <input type='text' name='studentID'> <br><br>
+		Type ('A','C' or 'S'): <input type='text' name='Type'> <br><br>
+		Venue: <input type='text' name='venue'> <br><br>
+		Session: <input type='text' name='session'> <br><br>
+		
+		Fill in the extra detail(s) for the chosen type of activity <br><br>
+		
+		<h3>Arts</h3>
+		Performance (True) or Visual Arts (False): <input type='text' name='performance'> <br><br>
+		
+		<h3>Cultural</h3>
+		Race: <input type='text' name='race'> <br><br>
+		
+		<h3>Sports</h3>
+		Contact (C or NC): <input type='text' name='contact'> <br><br>
+		Cost: <input type='text' name='cost'> <br><br>
+		
+		<input type='submit' value='submit' name='submit'>
+	</form>
+	
+	<form  action={{url_for('report')}} method='POST'>
+		<input type='submit' value='Generate Report' name='generateReport'>
+	</form>
+</fieldset>
+</body>
+
+
+
+</html>

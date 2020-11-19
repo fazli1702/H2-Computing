@@ -1,0 +1,11 @@
+JPJC 
+sql query, split date
+
+
+sql index start from 1 
+ SUBSTR(element, start index, length)
+- SUBSTR(date, 6, 2)
+
+
+year / month / day
+can sort

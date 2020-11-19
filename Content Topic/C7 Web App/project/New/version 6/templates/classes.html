@@ -1,0 +1,154 @@
+{% extends 'layout.html' %}
+
+{% block body%}
+<style>
+table {
+	font-family: arial, sans-serif;
+	border-collapse: collapse;
+	width: 75%;
+}
+
+td, th {
+	border: 1px solid #dddddd;
+	text-align: left;
+	padding: 8px;
+}
+
+tr:nth-child(even) {
+	background-color: #dddddd;
+}
+
+body{
+background-color: #f4f4f4;
+color: #555;
+font-family:Arial, Helvetica, sans-serif;
+font-size: 16px
+line-height: 1.6em;
+margin:0;
+}
+
+.container{
+	width: 80%;
+	margin:auto;
+	overflow:hidden;
+}
+
+#main-header{
+	background-color:coral;
+	color: white;
+}
+/* Add a black background color to the top navigation */
+.topnav {
+  background-color: #333;
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.main{
+	float: left;
+	width: 70%;
+	padding:0 30px;
+	box-sizing: border-box;
+    padding-top: 30px;
+}
+
+</style>
+
+
+<header id="main-header">
+    <div class="container">
+    <h1>Fazli Tuition Centre</h1>
+    </div>
+</header>
+
+
+<div class="topnav">
+    <a href="{{url_for('index')}}">Home</a>
+    <a href="{{url_for('classes')}}">Class</a>
+    <a href="{{url_for('login')}}">Login</a>
+</div>
+
+
+<div class="main">
+<h1>Classes</h1>
+
+<p>
+	Filter by: <br>
+	<form action="{{url_for('classes')}}" method="POST">
+		Subject:
+		<select name="subject">
+			{% for subject in subjects %}
+			<option value="{{subject}}">{{subject}}</option>
+			{% endfor %}
+		</select>
+		
+		Day:
+		<select name="day">
+			{% for day in days %}
+			<option value="{{day}}">{{day}}</option>
+			{% endfor %}
+		</select>
+
+		Location:
+		<select name="location">
+			{% for location in locations %}
+			<option value="{{location}}">{{location}}</option>
+			{% endfor %}
+		</select>
+
+		<input type="submit" name="submit" value="submit">
+
+	</form>
+</p>
+
+
+
+
+
+
+<table>
+	<!-- table header -->
+	<tr>
+	{% for head in header %}
+		<th>{{head}}</th>
+	{% endfor %}
+	</tr>
+	
+
+	<!-- class info -->
+	{% for info in information %}
+	<tr>
+	{% for ele in info %}
+		<td>{{ele}}</td>
+	{% endfor %}
+	</tr>
+	
+	{% endfor %}
+
+</table>
+</div>
+{% endblock %}
+
+
+

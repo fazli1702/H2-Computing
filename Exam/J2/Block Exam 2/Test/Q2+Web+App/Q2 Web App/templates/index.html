@@ -1,0 +1,24 @@
+<!DOCYPE html>
+<html>
+
+<head>
+	<h1>Particulars Form</h1>
+</head>
+
+
+<body>
+	<fieldset>
+		<legend>
+		Enter your Matriculation Number to retrieve your
+		school information
+		</legend>
+		
+		{{warning}}
+		<form method='POST' action="{{url_for('form')}}">
+		Matriculation Number: <input type='text' name='mat_no' size='2'>
+		</form>
+		
+	</fieldset>
+</body>
+
+</html>

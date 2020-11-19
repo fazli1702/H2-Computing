@@ -1,0 +1,48 @@
+{% extends 'layout.html' %}
+
+
+{% block title %}
+    Admin
+{% endblock %}
+
+
+{% block body %}
+
+<style>
+	table {
+	  font-family: arial, sans-serif;
+	  border-collapse: collapse;
+	  width: 50%;
+	}
+	
+	td, th {
+	  border: 1px solid #dddddd;
+	  text-align: left;
+	  padding: 8px;
+	}
+	
+	tr:nth-child(even) {
+	  background-color: #dddddd;
+	}
+</style>
+
+
+<h1>Student Information</h1>
+
+<table>
+    <tr>
+        <th>NRIC</th>
+        <th>Name</th>
+        <th>Telephone</th>
+    </tr>
+
+    {% for ele in students %}
+    <tr>
+        <td>>{{ele[0]}}</td>
+        <td>{{ele[1]}}</td>
+        <td>{{ele[2]}}</td>
+    </tr>
+    {% endfor %}
+</table>
+
+{% endblock %}

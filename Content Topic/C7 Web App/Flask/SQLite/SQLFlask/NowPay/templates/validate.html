@@ -1,0 +1,39 @@
+{% extends "layout.html" %} 
+
+
+{% block body %}
+<fieldset>
+    <legend><h2>Your Purchase</h2></legend>
+
+    <p>{{date}}<br>{{time}}</p>
+    
+    <ul>
+    {% for ele in purchase %}
+        <li>
+            {{ele[0]}} 
+            <br>
+            <strong>${{ele[1]}}</strong>
+        </li>
+    {% endfor %}
+    </ul>
+
+    <h3>Total: ${{total}}</h3>
+</fieldset>
+
+<fieldset>
+    <legend><h2>NowPay</h2></legend>
+
+    <form action="{{url_for('check')}}" method="POST">
+        Name: <input type="text" name="name">
+        <br>
+        <br>
+        Password: <input type="password" name="password">
+        <br>
+        <br>
+        <input type="submit" name="nowpay" value="nowpay">
+    </form>
+
+</fieldset>
+
+
+{% endblock %}

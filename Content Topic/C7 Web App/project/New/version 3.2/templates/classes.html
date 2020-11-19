@@ -1,0 +1,51 @@
+{% extends 'layout.html' %}
+
+{% block body%}
+<h1>Classes</h1> 
+
+<style>
+	table {
+	  font-family: arial, sans-serif;
+	  border-collapse: collapse;
+	  width: 50%;
+	}
+	
+	td, th {
+	  border: 1px solid #dddddd;
+	  text-align: left;
+	  padding: 8px;
+	}
+	
+	tr:nth-child(even) {
+	  background-color: #dddddd;
+	}
+</style>
+
+
+
+
+<table>
+	<!-- table header -->
+	<tr>
+	{% for head in header %}
+		<th>{{head}}</th>
+	{% endfor %}
+	</tr>
+	
+
+	<!-- class info -->
+	{% for info in information %}
+	<tr>
+	{% for ele in info %}
+		<td>{{ele}}</td>
+	{% endfor %}
+	</tr>
+	
+	{% endfor %}
+
+</table>
+
+{% endblock %}
+
+
+

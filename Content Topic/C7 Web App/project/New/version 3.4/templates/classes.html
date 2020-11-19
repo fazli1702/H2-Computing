@@ -1,0 +1,80 @@
+{% extends 'layout.html' %}
+
+{% block body%}
+<h1>Classes</h1>
+
+<p>
+	Filter by: <br>
+	<form action="{{url_for('classes')}}" method="POST">
+		Subject:
+		<select name="subject">
+			{% for subject in subjects %}
+			<option value="{{subject}}">{{subject}}</option>
+			{% endfor %}
+		</select>
+		
+		Day:
+		<select name="day">
+			{% for day in days %}
+			<option value="{{day}}">{{day}}</option>
+			{% endfor %}
+		</select>
+
+		Location:
+		<select name="location">
+			{% for location in locations %}
+			<option value="{{location}}">{{location}}</option>
+			{% endfor %}
+		</select>
+
+		<input type="submit" name="submit" value="submit">
+
+	</form>
+</p>
+
+<style>
+	table {
+	  font-family: arial, sans-serif;
+	  border-collapse: collapse;
+	  width: 50%;
+	}
+	
+	td, th {
+	  border: 1px solid #dddddd;
+	  text-align: left;
+	  padding: 8px;
+	}
+	
+	tr:nth-child(even) {
+	  background-color: #dddddd;
+	}
+</style>
+
+
+
+
+<table>
+	<!-- table header -->
+	<tr>
+	{% for head in header %}
+		<th>{{head}}</th>
+	{% endfor %}
+	</tr>
+	
+
+	<!-- class info -->
+	{% for info in information %}
+	<tr>
+	{% for ele in info %}
+		<td>{{ele}}</td>
+	{% endfor %}
+	</tr>
+	
+	{% endfor %}
+
+</table>
+
+{% endblock %}
+
+
+

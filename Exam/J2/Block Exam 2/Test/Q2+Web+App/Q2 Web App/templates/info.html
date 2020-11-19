@@ -1,0 +1,32 @@
+<!DOCYPE html>
+<html>
+
+<head>
+	<h1>Student's Info</h1>
+</head>
+
+
+<body>
+<ul>
+	<li>Matric No.: {{info[0]}}</li>
+	<li>Name: {{info[1]}}</li>
+	<li>Gender: {{info[2]}}</li>
+	<li>Civics Class: {{info[3]}}</li>
+	<li>Civics Tutor: {{info[4]}}</li>
+	<li>Home Room: {{info[5]}}</li>
+	<li>CCA/CCA Teacher IC: {{info[6]}}/{{info[7]}}</li>
+</ul>
+
+Would you like to change your CCA? <br><br>
+<form method='POST' action="{{url_for('cca')}}">
+	<input type='radio' name='change' value='Y'>Yes 
+	<input type='radio' name='change' value='N'>No
+
+
+<p>
+<input type='submit' value='submit' name='submit'>
+</p>
+</form>
+</body>
+
+</html>

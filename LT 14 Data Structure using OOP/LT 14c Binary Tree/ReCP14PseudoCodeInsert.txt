@@ -1,0 +1,75 @@
+def insert(self,newData):  ###iteration
+
+step 1: ##create a newNode (this is to be added to the self.Tree array):
+
+step 2: ##deal with empty tree first, check whether tree is empty
+
+##if it's empty, update the root to 0, 
+
+##and update Tree array and NextFreeChild accordingly
+
+step 3: ##else, deal with general tree (with at least one node)
+
+##since this part is likely repetitive, need to implement a loop structure
+
+##by first initializing variables, such as curr_index and prev_index
+
+            curr=self.Root
+
+            prev=[ ]   #creates an empty stack to store nodes that were visited during the traversal
+
+step 4: ##devise the mechanism to add nodes to general tree, by starting from the root node                   
+
+            while True:
+
+                currNode=self.Tree[curr]
+
+                ## case 1(a) node contains operator :) add nodes to it
+
+                if isOperator(currNode.getData()):
+
+                    ##check whether curr Node left has vacancy               
+
+                    if currNode.getLeftChild() == -1:  ##IDEAL
+
+                        ## case 2(a) ##if yes, :) add to the left and then break out of loop
+
+                    else:
+
+                    ##else, check whether curr Node right has vacancy
+
+                        if currNode.getRightChild() == -1:  ##IDEAL
+
+                            ##2(b) if yes, :) add to right and then break out of loop
+
+                        else:
+
+                            ##2(c) no vacancies on left and right
+
+                            ### proceed to check whether left child of currNode is an operator
+
+                            ## 3(a) if yes, traverse to left side, by appending current index to prev stack and then updating the curr index
+
+                            if isOperator(self.Tree[currNode.getLeftChild()].getData()):
+
+                            ##else, proceed to check whether right child of currNode is an operator
+
+                            else:
+
+                                if isOperator(self.Tree[currNode.getRightChild()].getData()):
+
+                                 ##3(b) if yes, traverse to right side by appending current index to prev stack and updating curr index
+
+                                else:
+
+                                ##3(c) else (stuck both children are operands) : proceed to the right subtree of the previous                                 node by using the prev stack to access the previous node
+
+
+
+                ##1(b) node contains operand :( dead end
+
+                else:
+
+                    print('cannot be inserted') 
+
+                    break

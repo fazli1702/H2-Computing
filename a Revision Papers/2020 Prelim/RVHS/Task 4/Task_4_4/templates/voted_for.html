@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<style>
+table, td, th{
+	border-collapse: collapse;
+	border: 1px solid black;
+}
+</style>
+
+
+
+<head>
+</head>
+
+<body>
+	<table>
+		<tr>
+			<th>CandidateNo</th>
+			<th>Name</th>
+		</tr>
+		
+		{% for candidateNo, name in data %}
+		<tr>
+			<td>{{candidateNo}}</td>
+			<td>{{name}}</td>
+		</tr>
+		{% endfor %}
+	</table>
+</body>
+
+
+</html>

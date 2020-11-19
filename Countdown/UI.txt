@@ -1,0 +1,34 @@
+Terminology (for ease of explanation):
+- Visual Hierarchy 
+(arrangement or presentation of elements in a way that implies 
+importance/time/sequence. <h1> sized heading vs <h4> sized heading. 
+Place at top vs place at bottom.) (Is it easy to look for something/guess 
+where it is in your app?)
+
+- Mental Model 	
+(how the user interface will work, given the similarity to the real world) 
+(e.g. You can guess that a volume slider in an app can be clicked and dragged, 
+because you do that to the volume slider for a sound system in real life.)
+
+- Affordances 
+(the radio button suggests the affordance of a 1 item selection, 
+and is not appropriate for a to-do list where you tick multiple tasks as done.)
+
+- Design Patterns 
+(The back button of Apple applications is always found at the same place/
+Your website navigation tabs are found at the same place.) 
+
+
+Good UI design
+1) Intuitive
+- user-friendly
+- easily digestable
+
+make use of:
+- visual hierarchy
+- mental model
+
+2) Minimse error
+e.g affordance of components (form/web app) --> allow/disallow actions
+
+3) Efficiency / Reduce step

@@ -1,0 +1,72 @@
+{% extends 'layout.html' %}
+
+{% block title%}Welcome{% endblock %}
+
+{% block body %}
+<h1>Welcome {{name}}</h1>
+
+<h2>Your Information</h2>
+
+<style>
+	table {
+	  font-family: arial, sans-serif;
+	  border-collapse: collapse;
+	  width: 50%;
+	}
+	
+	td, th {
+	  border: 1px solid #dddddd;
+	  text-align: left;
+	  padding: 8px;
+	}
+	
+	tr:nth-child(even) {
+	  background-color: #dddddd;
+	}
+</style>
+
+<!-- display student persoanl Information -->
+<table>
+    {% for head, info in header_student %}
+    <tr>
+        <th>{{head}}</th>
+        <td>{{info}}</td>
+    </tr>
+    {% endfor %}
+
+</table>
+
+
+<!-- display student class information -->
+<h2>Your classes</h2>
+
+<table>
+	<tr>
+	{% for head2 in header2 %}
+		<th>{{head2}}</th>
+	{% endfor %}
+	</tr>
+
+    {% for student_class in student_classes %}
+	<tr>
+	{% for class_info in student_class %}
+		<td>{{class_info}}</td>
+	{% endfor %}
+    </tr>
+    {% endfor %}
+
+</table>
+
+<p>
+	<a href="{{url_for('register_new')}}">Register for new class here</a>
+</p>
+
+<h2>Your outstanding fee:</h2>
+${{fees}}
+
+<p>
+	<a href="{{url_for('payment', Fees=fees, NRIC=nric, Password = password)}}">
+		Pay tuition fees here</a>
+</p>
+
+{% endblock %}

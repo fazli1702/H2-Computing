@@ -1,0 +1,27 @@
+{% extends 'layout.html' %}
+
+{% block title%} Login Page {% endblock %}
+
+{% block head %}Login{% endblock %}
+
+  
+{% block body %}
+
+<div style="color: red;">{{warning}}</div>
+<br>
+
+<fieldset>
+<form action="{{url_for('validate_login')}}" method="POST">
+
+    NRIC: <input type="text" name="nric"><br><br>
+    Password: <input type="password" name="password"><br><br>
+    
+    <input type="submit" name="login" value="login">
+</form>
+</fieldset>
+{% endblock %}
+
+
+
+
+

@@ -1,0 +1,82 @@
+[
+	{
+	"title": "X-Men",
+	"genre": ["Action", "Sci-fi"],
+	"year": 2000
+	},
+	{
+	"title": "Men in Black",
+	"genre": ["Action", "Sci-fi", "Comedy"],
+	"year": 2002
+	},
+	{
+	"title": "The Girl Who Leapt Through Time",
+	"genre": ["Anime", "Sci-fi"],
+	"year": 2006
+	},
+	{
+	"title": "Tron: Legacy",
+	"genre": ["Action", "Sci-fi"],
+	"year": 2010
+	},
+	{
+	"title": "Source Code",
+	"genre": ["Thriller", "Sci-fi"],
+	"year": 2011
+	},
+	{
+	"title": "The Thing",
+	"genre": ["Horror", "Sci-fi"],
+	"year": 2011
+	},
+	{
+	"title": "World War Z",
+	"genre": ["Horror", "Sci-fi"],
+	"year": 2013
+	},
+	{
+	"title": "Jurassic World: Fallen Kingdom",
+	"genre": ["Action", "Sci-fi"],
+	"year": 2018
+	},
+	{
+	"title": "Friday the 13th",
+	"genre": ["Thriller", "Horror"],
+	"year": 1980
+	},
+	{
+	"title": "The Hunter",
+	"genre": ["Action", "Thriller"],
+	"year": 1980
+	},
+	{
+	"title": "A Nightmare on Elm Street",
+	"genre": ["Horror", "Thriller"],
+	"year": 1984
+	},
+	{
+	"title": "Navy SEALS",
+	"genre": ["Action", "Thriller"],
+	"year": 1990
+	},
+	{
+	"title": "Nightwatch",
+	"genre": "Thriller",
+	"year": 1997
+	},
+	{
+	"title": "Sleepy Hollow",
+	"genre": ["Horror", "Thriller"],
+	"year": 1999
+	},
+	{
+	"title": "Red Sparrow",
+	"genre": "Thriller",
+	"year": 2018
+	},
+	{
+	"title": "Glass",
+	"genre": "Thriller",
+	"year": 2019
+	}
+]

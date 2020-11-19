@@ -1,0 +1,12 @@
+Sales[1] = 221.5
+Sales[2] = 261.2
+Sales[3] = 234.4
+Sales[4] = 198.4
+Sales[5] = 215.8
+Sales[6] = 216.1
+Sales[7] = 212.2
+Sales[8] = 202.9
+Sales[9] = 224.2
+Sales[10] = 200.3
+Sales[11] = 178.8
+Sales[12] = 164.4

@@ -1,0 +1,13 @@
+V1:
+- created csv file for all table
+
+- py script to create db and insert csv into db 
+    1. csv_db.py
+
+- validate input data from user
+    1. validate_login()
+    2. validate_register()
+
+
+completed:
+8:19 PM 27/3/2020

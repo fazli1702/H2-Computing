@@ -1,0 +1,26 @@
+<!DOCTPYE html>
+<html>
+
+<head>
+	<title></title>
+</head>
+
+<body>
+
+<form>
+	<select name='order'>
+	{% for ele in data %}
+		<option value='{{ele[0]}}'>{{ele[1]}} ${{ele[2]}}</option>
+	{% endfor %}
+	</select>
+
+	Quantity <input type="text">
+
+	<p><input type="submit"></p>
+
+</form>	
+	
+</body>
+
+
+</html>

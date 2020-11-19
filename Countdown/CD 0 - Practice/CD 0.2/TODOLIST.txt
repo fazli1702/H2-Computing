@@ -1,0 +1,7 @@
+Buy bread,0
+Meet friends for soccer,1
+Get pocket money,0
+Do computing homework,1
+Do GP homework,1
+Do Math practice papers,0
+Buy foolscap,0

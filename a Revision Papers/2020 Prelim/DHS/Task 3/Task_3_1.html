@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+</head>
+
+<style>
+table {
+	border-collapse:collapse;
+}
+
+td, th{
+	border: 1px solid;
+	text-align: left;
+}
+</style>
+
+
+<body>
+	<table>
+		<tr>
+			<th>Teacher's username</th>
+			<th>Teacher's password</th>
+			<th>Index number of number of student</th>
+			<th>Student's class</th>
+			<th>Date of presentation</th>
+			<th>Marks obtained</th>
+		</tr>
+		
+		{% for name, password, index, class, date, marks in data %}
+		<tr>
+			<td>{{name}}</td>
+			<td>{{password}}</td>
+			<td>{{index}}</td>
+			<td>{{class}}</td>
+			<td>{{date}}</td>
+			<td>{{marks}}</td>
+		</tr>
+		{% endfor %}
+	</table>
+</body>
+
+</html>

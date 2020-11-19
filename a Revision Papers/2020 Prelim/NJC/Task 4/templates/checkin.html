@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+</head>
+
+<body>
+    <form method="POST" action="{{url_for('checkin')}}">
+        Name <input type="text" name="name"> <br><br>
+        NRIC <input type="text" name="nric"> <br><br>
+        Contact Number <input type="text" name="number"> <br><br>
+		
+		<input type='submit' name='submit' value='submit'>
+		<button type='reset'>Cancel</button>
+	</form>
+</body>
+
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+</head>
+
+
+<body>
+	<table>
+		<tr>
+			<th>Class</th>
+			<th>IndexNo</th>
+			<th>Name</th>
+			<th>Gender</th>
+			<th>MatricNo</th>
+		</tr>
+		
+		{% for Class, IndexNo, Name, Gender, MatricNo in info %}
+		<tr>
+			<td>{{Class}}</td>
+			<td>{{IndexNo}}</td>
+			<td>{{Name}}</td>
+			<td>{{Gender}}</td>
+			<td>{{MatricNo}}</td>
+		</tr>
+		{% endfor %}
+	
+	
+	</table>
+</bodY>
+
+
+
+</html>

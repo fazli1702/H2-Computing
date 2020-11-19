@@ -1,0 +1,21 @@
+OOP
+
+Object:
+It is an instance of a class where it has all the attributes of the class
+and the methods of the class can be called on the object
+
+Encapsulation:
+Bundling attributes and methods within a class
+Attribtues can be accessed via methods of the class
+
+Inheritance:
+It refers to the abiity to create subclasses which adopt all the
+attributes and methods from a existing super class
+Can also have more attributes and methods from superclass
+
+-- promotes code reusability
+-- reduce code size, improve readibility as common code
+
+
+Polymorphism:
+at refers to the ability of different classes to respond to the same method differently

@@ -1,0 +1,31 @@
+UPDATED:
+
+student(nric*, name, email, tel, password)
+
+class (
+    id*, subject, level , teacher, 
+    location, start_time, end_time, fee
+)
+
+enrollment (nric*//, classID*//)
+
+* primary key
+// foreign key
+
+
+ER Diagram:
+[student]--<[enrollment]>--[class]
+
+
+student info needed:
+1) Name
+2) NRIC
+3) Email
+4) Telephone no.
+5) Course / Subject (drop down list)
+6) Password (for account // can be encrypt)
+
+
+----------------------------------------------
+
+

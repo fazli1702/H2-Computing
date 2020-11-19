@@ -1,0 +1,48 @@
+{% extends 'layout.html' %}
+
+{% block head %}
+Welcome to your account {{name}}!
+{% endblock %}
+
+
+{% block body %}
+<style>
+	table {
+	  font-family: arial, sans-serif;
+	  border-collapse: collapse;
+	  width: 50%;
+	}
+	
+	td, th {
+	  border: 1px solid #dddddd;
+	  text-align: left;
+	  padding: 8px;
+	}
+	
+	tr:nth-child(even) {
+	  background-color: #dddddd;
+	}
+</style>
+
+
+
+<h2>Your Information</h2>
+
+<!-- display student Information -->
+<table>
+    {% for head, info in header_student %}
+    <tr>
+        <th>{{head}}</th>
+        <td>{{info}}</td>
+    </tr>
+    {% endfor %}
+
+</table>
+
+
+
+<h2>Your classes</h2>
+
+<table></table>
+
+{% endblock %}

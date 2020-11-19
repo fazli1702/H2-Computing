@@ -1,0 +1,13 @@
+FUNCTION Transaction RETURN INTEGER
+    INPUT Withdrawal
+    DailyLimit <- 500
+    FixedCharge <- 1
+
+    IF Withdrawal < Balance OR Withdrawal > DailyLimit
+    	THEN 
+	    RETURN -1
+	ELSE
+	    RETURN 0, FixedCharge
+    ENDIF
+    
+

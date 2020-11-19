@@ -1,0 +1,26 @@
+<!DOCYPE html>
+<html>
+
+<head>
+	<h1>CCA Form</h1>
+</head>
+
+
+<body>
+	<form method='POST' action="{{url_for('update')}}">
+	
+	<select name='cca'>
+	{% for ele in data %}
+		<option value='{{ele[0]}}'>{{ele[0]}}</option>
+	{% endfor %}
+	</select>
+
+	
+	<p>
+	<input type='submit' value='submit' name='submit'>
+	</p>
+	
+	</form>
+</body>
+
+</html>

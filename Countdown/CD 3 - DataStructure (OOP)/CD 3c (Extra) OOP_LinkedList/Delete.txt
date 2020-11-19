@@ -1,0 +1,30 @@
+PROCEDURE Delete(position):
+    IF Start = 0   //empty LinkedList case
+	THEN
+            RETURN 'Cannot delete from empty linked list'       
+            
+        ELSE	    
+            IF position=1        //delete front of the linkedlist
+		THEN                        
+                    Temp ← Node[Start].Pointer
+		    Node[Start].Pointer ← NextFree  
+		    Node[Start].Name ← ""
+                    NextFree ← Start
+                    Start ← Temp               
+                ELSE
+	            //traverse the list, starting at Start to 
+	            //the position at which to delete node
+                    current ← Start
+                    previous ← 0              
+                    FOR i ← 1 to position-1
+                        previous ← current
+                        current ← Node[current].Pointer
+                    Temp ← Node[current].Pointer		    
+		    Node[previous].Pointer ← Temp  
+		    Node[current].Pointer ← NextFree 
+		    Node[current].Name ← ""
+                    NextFree ← current
+	    ENDIF
+    ENDIF
+ENDPROCEDURE	
+                                                

@@ -1,0 +1,7 @@
+Tuition Centre
+
+student(nric*, name, email, tel, password)
+
+class(classID*, subject, level, teacher, location, day, start_time, end_time, fee)
+
+enrollment(nric*, classID*)

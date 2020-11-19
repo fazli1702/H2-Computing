@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+</head>
+
+<body>
+	<h3>Service Status</h3>	
+	<form action={{url_for('service_status')}} method='POST'>	
+		<input type='radio' name='status' value='True'> True
+		<input type='radio' name='status' value='False'> False
+		
+		<br><br>
+		
+		<input type='submit' name='submit' value='submit'>
+	</form>
+</body>
+
+</html>

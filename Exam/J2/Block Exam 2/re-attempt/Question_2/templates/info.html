@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <h1>Student's Info</h1>
+</head>
+
+<body>
+    Matric No.: {{info[0]}} <br>
+    Name: {{info[1]}} <br>
+    Gender:{{info[2]}} <br>
+    Civics Class: {{info[3]}} <br>
+    Civics Tutor: {{info[4]}} <br>
+    Home Room: {{info[5]}} <br>
+    CCA/CCA TeacherIC: {{info[6]}} / {{info[7]}}<br>
+
+    <form method="POST" action="{{url_for('cca')}}">
+        Would you like to change your CCA? <br>
+        <input type="radio" name="change" value="Y"> Yes 
+        <input type="radio" name="change" value="N"> No
+
+        <p>
+            <input type="submit" name="submit" value="submit">
+        </p>
+    </form>
+
+</body>
+
+</html>

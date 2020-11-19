@@ -1,0 +1,22 @@
+Naming convention:
+Database
+--> ER diagram - all capitalise
+
+data dependencies --> leads to data redundency --> incosistency (human error)
+avoid/minimise/prevent data inconsistency --> normalise db / use constraints in table
+
+2016:
+customerID,
+bookingDate, 
+hireStartDate, 
+hireReturnDate,
+Type,
+Deposit,
+vehicleRate
+
+
+
+CUSTOMER(referenceCode, Name)
+VEHICLE(regNo, vehicleType)
+TYPE(Type, Rate)
+RENTAL(customerID, vehicleRegNo, bookingDate, startDate, endDate, deposit)

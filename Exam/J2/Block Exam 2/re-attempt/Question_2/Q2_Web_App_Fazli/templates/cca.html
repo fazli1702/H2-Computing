@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <h1></h1>
+</head>
+
+
+<body>
+<form method="POST" action="{{url_for('update')}}">
+    Please select your new CCA:
+    <select name="cca">
+    {% for cca in data %}
+        <option value="{{cca[0]}}">{{cca[0]}}</option>
+    {% endfor %}
+    </select>
+
+    <input type="submit" name="submit" value="submit">
+</form>
+</body>
+
+
+
+</html>

@@ -1,0 +1,162 @@
+{% extends 'layout.html' %}
+
+
+{% block title %}
+    Fazli Tuition Centre
+{% endblock %}
+
+
+
+{% block body %}
+<style>
+
+
+body{
+	background-color: #f4f4f4;
+	color: #555;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size: 16px
+	line-height: 1.6em;
+	margin:0;
+}
+
+.container{
+	width: 80%;
+	margin:auto;
+	overflow:hidden;
+}
+
+#main-header{
+	background-color:coral;
+	color: white;
+}
+/* Add a black background color to the top navigation */
+.topnav {
+  background-color: #333;
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+#sidebar{
+	float:right;
+	width: 30%;
+    height: 50%;
+	color: white;
+	padding: 0 50px;
+	box-sizing: border-box;
+    padding-top: 30px;
+}
+
+.main{
+	float: left;
+	width: 70%;
+	padding:0 30px;
+	box-sizing: border-box;
+    padding-top: 30px;
+}
+
+.button{
+    text-decoration: none;
+	background-color:#333;
+	color:#fff;
+	padding:5px 15px;
+	border:none;
+}
+
+.button:hover{
+	background:red;
+	color:#fff;
+}
+
+.label{
+    color: black;
+    font-weight: bold;
+}
+
+</style>
+
+
+
+<header id="main-header">
+    <div class="container">
+    <h1>Fazli Tuition Centre</h1>
+    </div>
+</header>
+
+
+<div class="topnav">
+    <a href="{{url_for('index')}}">Home</a>
+    <a href="{{url_for('classes')}}">Class</a>
+    <a href="{{url_for('login')}}">Login</a>
+</div>
+
+
+<aside id="sidebar">
+    <fieldset>
+        <li class="label">Register Here</li><br>
+        <li><a class="button" href="{{url_for('register')}}">Register</a></li><br><br>
+        
+        <li class="label">Login Here</li><br>
+        <li><a class="button" href="{{url_for('login')}}">Login</a></li><br><br>
+        
+        <li class="label">Admin</li><br>
+        <li><a class="button" href="{{url_for('admin_login')}}">Admin</a></li>
+        <br><br><br><br><br>
+
+    </ul>
+</fieldset>
+</aside>
+
+
+<h1 class="main">Welcome to Fazli Tuition Centre</h1>
+
+<section class="main">
+<fieldset>
+<h2>About Us</h2>
+
+<p>
+    We are a tuition centre that provides tuition for many
+    subjects all around Singapore.
+</p>
+
+</fieldset>
+</section>
+    
+
+
+
+<section class="main">
+<fieldset>
+<h2>Subjects Offered</h2>
+
+<p>We offer a huge range of subjects</p>
+<br>
+
+<a class="button" href="{{url_for('classes')}}">List of all classes</a>
+</fieldset>
+</section>
+
+
+
+{% endblock %}
