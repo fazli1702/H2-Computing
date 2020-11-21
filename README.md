@@ -3,10 +3,10 @@
 This is all the notes and my school (YIJC, 19S15) work for H2 computing 9569 (first batch) (Singapore GCE A levels).  
 Programming is mainly based on Python  
 
-The syllabus can be found here
+The syllabus can be found here:  
 https://www.seab.gov.sg/docs/default-source/national-examinations/syllabus/alevel/2020syllabus/9569_y20_sy.pdf  
 
-All of my school work can be found here  
+All of my school work can be found here:  
 https://yijc.coursemology.org/
 
 ## Teachers 
